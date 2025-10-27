@@ -78,10 +78,6 @@ These results demonstrate strong predictive capability, with further enhancement
 * Inference indicates that engine type, capacity, and range are significant drivers of market value.
 * Turbofan engines and higher capacity models consistently display higher pricing due to efficiency and operational advantages.
 
-**Conclusion:**
-
-  This project successfully demonstrates the use of data science and machine learning in the aviation sector. By integrating statistical modeling and interactive dashboards, it presents a comprehensive solution for forecasting airplane prices. The model provides valuable insights into the factors affecting aircraft valuation and supports strategic planning, investment analysis, and market forecasting.
-
 **Tools & Technologies:**
 
 * Language: R
@@ -96,3 +92,7 @@ These results demonstrate strong predictive capability, with further enhancement
 * Deploy model via web interface (Streamlit/Flask)
 * Include external economic factors (fuel price trends, inflation rate)
 * Implement real-time prediction with API integration
+
+**Conclusion:**
+
+  This project successfully demonstrates the use of data science and machine learning in the aviation sector. By integrating statistical modeling and interactive dashboards, it presents a comprehensive solution for forecasting airplane prices. The model provides valuable insights into the factors affecting aircraft valuation and supports strategic planning, investment analysis, and market forecasting.
