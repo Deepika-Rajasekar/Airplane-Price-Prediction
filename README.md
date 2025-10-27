@@ -1,6 +1,6 @@
-**Airplane Price Prediction using Multiple Linear Regression & Power BI Dashboards
+**Airplane Price Prediction using Multiple Linear Regression & Power BI Dashboards**
 
-Project Overview:**
+**Project Overview:**
 
   This project focuses on predicting the market price of airplanes using machine learning techniques. Airplane pricing is influenced by multiple technical, operational, and economic factors such as engine type, number of engines, seating capacity, fuel consumption, maintenance cost, range, and sales region. The project applies Multiple Linear Regression to estimate aircraft prices accurately and uses Exploratory Data Analysis (EDA) and interactive dashboards to visualize key trends and insights in the aviation market.
 
