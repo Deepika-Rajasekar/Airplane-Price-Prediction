@@ -1,98 +1,94 @@
-**Airplane Price Prediction using Multiple Linear Regression & Power BI Dashboards**
+# ✈️ Airplane Price Prediction  
+### Multiple Linear Regression | EDA | Power BI Dashboards
 
-**Project Overview:**
+## 📌 Overview  
+This project predicts **airplane market prices** using multiple linear regression and explores the key technical, operational and economic factors influencing aircraft valuation—all visualised through interactive Power BI dashboards.  
+The dataset consists of **12,377 airplane records** originally collected in Turkish, translated into English for analysis.
 
-  This project focuses on predicting the market price of airplanes using machine learning techniques. Airplane pricing is influenced by multiple technical, operational, and economic factors such as engine type, number of engines, seating capacity, fuel consumption, maintenance cost, range, and sales region. The project applies Multiple Linear Regression to estimate aircraft prices accurately and uses Exploratory Data Analysis (EDA) and interactive dashboards to visualize key trends and insights in the aviation market.
+---
 
-  The dataset consists of 12,377 airplane records with 11 critical features, originally sourced in Turkish and translated into English for analysis. This project provides valuable insights for aircraft manufacturers, buyers, leasing companies, and aviation analysts to make informed decisions based on data-driven predictions and market intelligence.
+## 🎯 Objectives  
+- Build a regression model to estimate airplane prices  
+- Identify the most significant price-influencing factors  
+- Perform EDA to uncover trends related to capacity, engine type, range, and pricing  
+- Create interactive Power BI dashboards to visualise insights  
+- Evaluate model performance using metrics: R², RMSE, MSE, MAE, Accuracy  
 
-**Objectives:**
+---
 
-* Develop a predictive model to estimate airplane prices using historical data.
+## 📁 Dataset Features  
+Key features used in the modelling:  
+- Model – Aircraft name/model  
+- Production Year (1980 – 2023)  
+- Number of Engines  
+- Engine Type (Turbofan / Piston)  
+- Capacity (max passenger seating)  
+- Range (km)  
+- Fuel Consumption (L/hr)  
+- Maintenance Cost (hourly expense)  
+- Sales Region (continent or regional market)  
+- Price ($) – Target variable  
 
-* Identify key factors influencing the market value of aircraft.
+---
 
-* Perform EDA to uncover trends in capacity, engine type, range, and pricing.
+## 🔧 Data Preprocessing & EDA  
+- Handled missing values and standardised column names  
+- Categorical encoding of variables (Engine Type, Sales Region)  
+- Explored data via statistical summaries (`summary()`, `str()`, `head()` in R)  
+- Visualised:  
+  - Price trends over production years  
+  - Fuel consumption by model  
+  - Passenger capacity distribution  
+  - Engine type impact on price  
 
-* Build interactive dashboards using Power BI to visually interpret results.
+---
 
-* Evaluate model performance using metrics such as R², RMSE, MSE, MAE, and Accuracy.
+## 📊 Power BI Dashboard Highlights  
+- Price comparison by aircraft model (average, minimum)  
+- Maintenance cost vs price relationship  
+- Fuel efficiency trends across models  
+- Engine type distribution (91% Turbofan vs 9% Piston)  
+- Regional sales insights  
+- Yearly market price trends and forecast view  
 
-**Dataset Description:**
+---
 
-The dataset contains the following features:
+## 🤖 Model Performance  
+| Metric | Value | Interpretation |
+|--------|--------|----------------|
+| R²     | 0.915  | 91.5% of price variance explained |
+| RMSE   | 67,401,326 | Moderate average error in USD |
+| MAE    | 49,496,987 | Average absolute error |
+| Accuracy| 75.25% | Good predictive performance, room for improvement |
 
-Feature	Description:
+---
 
-* Model	- Aircraft name/model
-* Production Year	- Year of manufacture (1980–2023)
-* Number of Engines -	Total engines (1 for piston, 2+ for turbofan)
-* Engine Type -	Turbofan or Piston
-* Capacity -	Maximum passenger seating
-* Range (km) -	Maximum distance per flight
-* Fuel Consumption	- Liters per hour
-* Maintenance Cost -	Hourly maintenance expense
-* Age	- Production Year
-* Sales Region -	Continent or regional sales market
-* Price ($) -	Target variable (market price in USD)
+## 🔍 Key Insights  
+- Engine type (Turbofan vs Piston), capacity and range are major drivers of price  
+- Aircraft with turbofan engines and higher capacity consistently show higher market value  
+- Maintenance cost is strongly correlated with older aircraft age  
+- Sales region influences pricing trends based on market demand and region specific factors  
 
-**Data Preprocessing & Exploration**
+---
 
-* Handled missing values and standardized column names.
-* Encoded categorical variables for analysis.
-* Conducted statistical summary and structure analysis using R (summary(), str(), head()).
-* Applied data visualization using line charts, bar charts, and pie charts to explore:
-  - price trends over the years
-  - Fuel consumption by model
-  - Passenger capacity distribution
-  - Engine type impact on price
+## 🛠 Tech Stack  
+- **Language:** R  
+- **ML:** Multiple Linear Regression  
+- **Libraries:** tidyverse, caret  
+- **Visualization & Dashboards:** Power BI  
+- **Tools:** GitHub, Jupyter Notebook  
 
-**Business Intelligence Dashboards:**
+---
 
-Interactive Power BI dashboards were created to present insights into:
+## 🚀 Future Enhancements  
+- Implement advanced models: Random Forest, XGBoost, Neural Networks  
+- Deploy the model via Streamlit or Flask web application  
+- Integrate external economic variables: fuel price trends, inflation rate  
+- Build real-time prediction API with live data feed  
 
-* Average and minimum aircraft prices by model
-* Maintenance cost vs. price comparison
-* Fuel efficiency trends
-* Regional sales performance
-* Engine type distribution (91% turbofan vs. 9% piston)
-* Yearly market price trends and forecast view
+---
 
-Dashboards help stakeholders quickly interpret critical factors affecting aircraft prices and optimize purchasing or selling strategies.
+## ✅ Conclusion  
+This project combines machine learning and interactive dashboards to analyse and forecast airplane prices. The insights and visualisations provide strategic value for aircraft manufacturers, buyers, leasing firms and aviation analysts.
 
-**Model Evaluation:**
-
-The model was evaluated using regression metrics:
-
-* Metric	Value	Interpretation
-* R-squared	(0.915) -	Model explains 91.5% of price variance
-* RMSE (67,401,326) -	Moderate prediction error
-* MAE	(49,496,987) -	Average price prediction error
-* Accuracy (75.25%) -	Good performance with improvement potential
-
-These results demonstrate strong predictive capability, with further enhancements possible using advanced models like Random Forest, XGBoost, or Neural Networks.
-
-**Prediction & Inference:**
-
-* The model predicts aircraft prices based on key features.
-* Inference indicates that engine type, capacity, and range are significant drivers of market value.
-* Turbofan engines and higher capacity models consistently display higher pricing due to efficiency and operational advantages.
-
-**Tools & Technologies:**
-
-* Language: R
-* Libraries: tidyverse, caret
-* Machine Learning: Multiple Linear Regression
-* Visualization: Power BI
-* Dashboarding: Interactive, filters enabled by region, model, and engine type
-
-**Future Enhancements:**
-
-* Integrate advanced ML models (Random Forest, Gradient Boosting, Neural Networks)
-* Deploy model via web interface (Streamlit/Flask)
-* Include external economic factors (fuel price trends, inflation rate)
-* Implement real-time prediction with API integration
-
-**Conclusion:**
-
-  This project successfully demonstrates the use of data science and machine learning in the aviation sector. By integrating statistical modeling and interactive dashboards, it presents a comprehensive solution for forecasting airplane prices. The model provides valuable insights into the factors affecting aircraft valuation and supports strategic planning, investment analysis, and market forecasting.
+⭐ *If you found this repository useful, feel free to give it a star!*  
