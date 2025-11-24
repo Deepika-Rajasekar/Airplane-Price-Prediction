@@ -1,4 +1,4 @@
-# ✈️ Airplane Price Prediction  
+# Airplane Price Prediction  
 ### Multiple Linear Regression | EDA | Power BI Dashboards
 
 ## 📌 Overview  
