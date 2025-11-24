@@ -76,7 +76,7 @@ Key features used in the modelling:
 - **ML:** Multiple Linear Regression  
 - **Libraries:** tidyverse, caret  
 - **Visualization & Dashboards:** Power BI  
-- **Tools:** GitHub, Jupyter Notebook  
+- **Tools:** GitHub, R Studio  
 
 ---
 
