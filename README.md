@@ -1,18 +1,19 @@
 # Airplane Price Prediction  
 ### Multiple Linear Regression | EDA | Power BI Dashboards
 
-## 📌 Overview  
-This project predicts **airplane market prices** using multiple linear regression and explores the key technical, operational and economic factors influencing aircraft valuation—all visualised through interactive Power BI dashboards.  
+## 📌 Project Goal & Business Value
+
+- The primary objective of this project is to provide a data-driven valuation framework for the aviation industry. By leveraging historical market data, this predictive model assists sellers, buyers, and fleet managers in estimating aircraft prices with high precision.
+
+- Standardizing Valuation: Eliminates subjective pricing bias by using objective features like Aircraft Age, Engine Configuration, and Seating Capacity.
+
+- Risk Mitigation: Helps buyers avoid overpaying and sellers avoid undervalued listings by identifying the "Fair Market Value" through Multiple Linear Regression.
+
+- Market Transparency: Provides stakeholders with a clear understanding of which technical specifications (e.g., Number of Engines vs. Fuel Type) drive the most significant price fluctuations.
+
+## Overview  
+and explores the key technical, operational and economic factors influencing aircraft valuation—all visualised through interactive Power BI dashboards.  
 The dataset consists of **12,377 airplane records** originally collected in Turkish, translated into English for analysis.
-
----
-
-## 🎯 Objectives  
-- Build a regression model to estimate airplane prices  
-- Identify the most significant price-influencing factors  
-- Perform EDA to uncover trends related to capacity, engine type, range, and pricing  
-- Create interactive Power BI dashboards to visualise insights  
-- Evaluate model performance using metrics: R², RMSE, MSE, MAE, Accuracy  
 
 ---
 
@@ -32,9 +33,13 @@ Key features used in the modelling:
 ---
 
 ## 🔧 Data Preprocessing & EDA  
-- Handled missing values and standardised column names  
-- Categorical encoding of variables (Engine Type, Sales Region)  
-- Explored data via statistical summaries (`summary()`, `str()`, `head()` in R)  
+
+- Handled missing values and standardised column names
+  
+- Categorical encoding of variables (Engine Type, Sales Region)
+  
+- Explored data via statistical summaries (`summary()`, `str()`, `head()` in R)
+  
 - Visualised:  
   - Price trends over production years  
   - Fuel consumption by model  
@@ -72,11 +77,11 @@ Key features used in the modelling:
 ---
 
 ## 🛠 Tech Stack  
-- **Language:** R  
-- **ML:** Multiple Linear Regression  
+- **Language:** R programming
+- **ML:**  Feature engineering, Multiple Linear Regression, Model evaluation
 - **Libraries:** tidyverse, caret  
 - **Visualization & Dashboards:** Power BI  
-- **Tools:** GitHub, R Studio  
+- **Tools:** R Studio, Power BI
 
 ---
 
